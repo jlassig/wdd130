@@ -24,6 +24,9 @@
  --nav-hover-link-color: #CB9744;
  --nav-hover-background-color: #396E94;
 }
+*{
+ border: 2px solid blue;
+}
 
 #content{ 
  max-width: 1600px;
