@@ -1,0 +1,39 @@
+
+
+body{
+ text-align: center;
+ background-color: seagreen;
+ color: white;
+
+}
+
+div {
+ text-align: center;
+}
+ol{
+ color: black;
+ display: inline-block;
+ text-align: left;
+}
+
+
+h2{
+ color:white;
+ width: 30%;
+ margin: 0 auto;
+ font-size: 1.8em;
+ padding: 25px;
+}
+img{
+ width: 15%;
+}
+p{
+ width: 30%;
+ margin: 0 auto;
+}
+.wider{
+ width: 35%;
+}
+h1:hover, .bottom_p {
+ color: black;
+}
