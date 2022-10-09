@@ -1,0 +1,20 @@
+
+
+.circle_image{
+ border-radius: 360px;
+ border: 15px solid #444444;
+ max-width: 180px;
+ display: block;
+ margin: 50px auto;
+ 
+}
+.hero{
+ width: 99%;
+}
+.lower_div{
+ background-color: #737373;
+ width: 33.333%;
+ display: inline-block;
+ margin:-6px;
+
+}
