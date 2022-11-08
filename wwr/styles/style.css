@@ -304,7 +304,7 @@ footer p a:hover{
 .salmon_h4, .desolation_h4{
   grid-row: 6/7;
 }
-.salmon_img, .desolation.img{
+.salmon_cont, .desolation_cont{
   grid-row: 7/8;
 }
 .salmon_cost, .desolation_cost{
@@ -314,17 +314,26 @@ footer p a:hover{
   grid-row: 9/10;
 }
 
-.instructions, .extra-info, .dates-list, .cost, .trip-header{
+.instructions, .extra-info, .cost, .trip-header,.list-header{
   text-align: center;
+}
+.list-header{
+  margin-bottom:-15px;
+  margin-top: -5px;
+  text-decoration: underline;
+
 }
 .extra-info {
   color: var(--secondary-color);
   font-size: 12px;
 }
-.dates-list{
+.list-header,.ul-list{
   color: var(--secondary-color);
   font-size: 14px;
+}
+.ul-list{
   list-style: none;
+  text-align: left;
 }
 
 .cost{
