@@ -414,6 +414,10 @@ footer p a:hover{
     margin: 0 auto;
   }
 
+  .extra-info, .list-header, .ul-list{
+    font-size: 5px;
+  }
+
   footer {
     margin-top: 25px;
   }
