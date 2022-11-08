@@ -1,17 +1,16 @@
 
 body{
  max-width: 300px;
- border-radius: 20px;
- border: 3px solid red;
+
 
 }
 
 img{
  display: block;
  height: 150px;
- overflow: hidden;
- /* border-top-left-radius: 15px;
- border-top-right-radius: 15px; */
+ /* overflow: hidden; */
+ border-top-left-radius: 15px;
+ border-top-right-radius: 15px;
 }
 
 h5, h1{
