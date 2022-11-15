@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <link rel="stylesheet" href="styles/style.css">
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Uni Advisors</title>
+</head>
+<body>
+ <header>
+  <!--Putting the logo on the top left of the screen. Also, the user can click the logo and go back to the home screen!-->
+  <a id="logo_link" href="index.html">
+   <img class="logo" src="images/uni-advisors_logo.png"
+   alt="Uni Advisors logo">
+  </a>
+  <!--Nav Bar -->
+  <nav>
+   <a href="index.html">Home</a>
+   <a href="appliedtech.html">Applied Tech</a>
+   <a href="booknow.html">Book Now</a>
+   <a href="contactus.html">Contact Us</a>
+  </nav>
+ </header>
+  <div id="banner-box">
+   <h1>Uni-Advisors</h1>
+   <h5>We help you succeed at your university.</h5>
+  </div>
+
+ <main>
+  <!--Find the slideshow info here:  https://www.w3schools.com/howto/default.asp  -->
+  <div class="slideshow-container">
+   <!--holds 2 pictures that the user can cycle through. also include captions and sources.-->
+   <div class="mySlides fade">
+    <div class="numbertext">1 / 2</div>
+    <img src="images/online student.png" alt="online student">
+    <div class="text">Connect with an Advisor</div>
+    <div class="source_text">Photo by <a href="https://www.freepik.com/free-photo/focused-mature-customer-reading-agreement-consulting-agent-about-details-pointing-pen-paper_10608095.htm#query=advisor&position=2&from_view=search&track=sph">pch.vector</a></div>
+   </div>
+
+   <div class="mySlides" fade>
+    <div class="numbertext">2 / 2</div>
+    <img src="images/older student.png" alt="older student">
+    <div class="text">Our Advisors are ready to help</div>
+    <div class="source_text">Photo by <a href="Photo by Anna Shvets: https://www.pexels.com/photo/people-on-a-video-call-4226256/">Anna Shvets</a></div>
+   </div>
+
+   <!-- Next and previous buttons -->
+   <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+   <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+  </div> <!--end of slideshow container-->
+
+  <br>  <!--break-->
+
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+   <span class="dot" onclick="currentSlide(1)"></span>
+   <span class="dot" onclick="currentSlide(2)"></span>
+  </div>
+
+
+  <div class="welcome-box">
+   <!--has a paragraph with instructions and a Welcome header-->
+   <h3>Welcome</h3>
+   <p>Welcome to Uni Advisors, where we match students up with the advisor who can best help them to navigate their
+   university. Choose your major from the dropdown on the right to get started. </p>
+  </div>
+
+
+  <div class="choose-major-box">
+   <!--has a label/header and a dropdown. Also, check here for info on drop downs: https://www.w3schools.com/howto/default.asp-->
+   <h3>Choose your major:</h3>
+   <div class="dropdown">
+    <button onclick="myFunction()" class="dropbtn">Majors</button>
+    <div id="myDropdown" class="dropdown-content">
+     <a href="appliedtech.html">Applied Technology</a>
+     <a href="#">Marriage and Family Studies</a>
+     <a href="#">Professional Studies</a>
+     <a href="#">Applied Health</a>
+     <a href="#">Applied Business</a>
+     <a href="#">Communication</a>
+    </div>
+   </div>
+  </div> 
+  
+  <div class="contact-button">
+   <!--I want to include a contact now button at the bottom-->
+   CONTACT US
+  </div>
+
+
+ </main>
+
+
+ <footer>
+  <p class="copyright">Uni Advisors &copy; 2022 - Julia Lassig</p>
+  <p><a href="index.html">TOP</a></p>
+  <p><a href="site-plan.html">Site Plan</a></p>
+
+  <div class="social">
+   <a href="https://facebook.com" target="_blank">
+    <img src="images/facebook.png" alt="fb icon">
+   </a>
+   <a href="https://twitter.com" target="_blank">
+    <img src="images/twitter.png" alt="twitter icon">
+   </a>
+   <a href="https://instagram.com" target="_blank">
+    <img src="images/instagram.png" alt="instagram icon">
+   </a>
+  </div>
+ </footer>
+
+<script>
+
+ /*script for the DROPDOWN of Majors:
+ /* When the user clicks on the button, 
+ toggle between hiding and showing the dropdown content */
+ function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+ }
+
+ // Close the dropdown if the user clicks outside of it
+ window.onclick = function (event) {
+  if (!event.target.matches('.dropbtn')) {
+   var dropdowns = document.getElementsByClassName("dropdown-content");
+   var i;
+   for (i = 0; i < dropdowns.length; i++) {
+    var openDropdown = dropdowns[i];
+    if (openDropdown.classList.contains('show')) {
+     openDropdown.classList.remove('show');
+    }
+   }
+  }
+ }
+
+/*SLIDESHOW JAVASCRIPT:*/
+ let slideIndex = 1;
+  showSlides(slideIndex);
+
+  // Next/previous controls
+  function plusSlides(n) {
+   showSlides(slideIndex += n);
+  }
+
+  // Thumbnail image controls
+  function currentSlide(n) {
+   showSlides(slideIndex = n);
+  }
+
+  function showSlides(n) {
+   let i;
+   let slides = document.getElementsByClassName("mySlides");
+   let dots = document.getElementsByClassName("dot");
+   if (n > slides.length) { slideIndex = 1 }
+   if (n < 1) { slideIndex = slides.length }
+   for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+   }
+   for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+   }
+   slides[slideIndex - 1].style.display = "block";
+   dots[slideIndex - 1].className += " active";
+  }
+</script>
+
+
+ 
+</body>
+</html>
