@@ -273,21 +273,26 @@ header{
 .contact-button-box h4{
  font-size: 1.5em;
 }
-.contact-button-box button{
+.contactus-button{
+ width: 156px;
  font-size: 1.5em;
  background-color: var(--accent1-color);
  color: var(--secondary-color);
  padding: 7px;
  border-radius: 12px;
+ border: 1px solid var(--secondary-color);
+ margin: auto;
 
 }
-.contact-button-box a{
+.contactus-button a{
  text-decoration: none;
+ color: var(--secondary-color);
 }
-.contact-button-box button:hover{
+.contactus-button:hover{
  background-color: var(--secondary-color);
 }
-.contact-button-box a:hover{
+
+.contactus-button a:hover{
  color: var(--primary-color);
 }
 
