@@ -139,8 +139,7 @@ header{
   }
  
   /* Caption text */
-  .text-slideshow {
- 
+  .text-slideshow { 
    font-size: 2em;
    padding: 8px 12px;
    position: absolute;
@@ -149,8 +148,6 @@ header{
    width: 100%;
    text-align: center;
    font-family: var(--paragraph-font);
-   /* border: 2px solid blue; */
- 
   }
  
   .slide1text {
@@ -180,8 +177,6 @@ header{
  
   .sourcetext a {
    text-decoration: none;
- 
- 
   }
  
   /* The dots/bullets/indicators */
@@ -227,7 +222,7 @@ header{
   grid-column: 2/3;
   padding: 40px;
   background-color: var(--accent2-color); 
-  border: 10px solid var(--secondary-color);
+  border: 15px solid var(--secondary-color);
  }
  .welcome-box h3, .choose-major-box h3{
   font-family: var(--heading-font);
@@ -243,7 +238,7 @@ header{
   padding: 40px;
   text-align: center;
   background-color: var(--accent2-color);
-  border: 10px solid var(--secondary-color);
+  border: 15px solid var(--secondary-color);
  }
  .welcome-title{
   text-align: center;
@@ -374,6 +369,7 @@ footer a:hover {
 .show {
  display: block;
 } */
+
 
 /*the following is for mobile devices and smaller screen (in other words responsive design):*/
 
