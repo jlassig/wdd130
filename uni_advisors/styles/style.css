@@ -45,11 +45,13 @@ nav a {
  text-decoration: none;
  align-self: center;
  padding: 15px;
+ font-family: var(--paragraph-font);
 }
 
 nav {
  display: flex;
  justify-content: space-around;
+ 
 
 }
 nav a:hover {
@@ -60,14 +62,247 @@ header{
  background-color: var(--secondary-color);
  display: grid;
  grid-template-columns: 150px auto;
+ margin-bottom: 30px;
 }
 
-/*FOOTER*/
 
+/*BANNER BOX*/
+.banner-box{
+ text-align: center;
+ color: var(--primary-color);
+ background-color: var(--secondary-color);
+ width: 75%;
+ height: 11em;
+ margin: auto;  /*this centers the div horizontally on the screen*/
+ border-top: 1px solid var(--secondary-color);
+ margin-bottom: 30px;
+ }
+ .banner-box h1{
+  font-size: 3em;
+  font-family: var(--heading-font);
+ }
+ .banner-box h5{
+  font-size: 1.1em;
+  font-family: var(--paragraph-font);
+ }
+
+  /*SLIDE SHOW CSS for the HOME SCREEN, Style the next and previous buttons,
+ the caption text and the dots:*/
+  /* Slideshow container*/
+  * {
+   box-sizing: border-box
+  }
+ 
+  .image-home {
+   width: 100%;
+  }
+ 
+  .slideshow-container {
+   max-width: 75%;
+   position: relative;
+   margin: auto;
+   border: 15px solid var(--accent1-color);
+  }
+ 
+  /* Hide the images by default */
+  .mySlides {
+   display: none;
+  }
+ 
+  /* Next & previous buttons */
+  .prev,
+  .next {
+   cursor: pointer;
+   position: absolute;
+   top: 50%;
+   width: auto;
+   margin-top: -22px;
+   padding: 16px;
+   color: var(--accent1-color);
+   font-weight: bold;
+   font-size: 25px;
+   transition: 0.6s ease;
+   border-radius: 0 3px 3px 0;
+   user-select: none;
+  }
+ 
+  /* Position the "next button" to the right */
+  .next {
+   right: 0;
+   border-radius: 3px 0 0 3px;
+  }
+ 
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+   background-color: var(--secondary-color);
+  }
+ 
+  /* Caption text */
+  .text-slideshow {
+ 
+   font-size: 2em;
+   padding: 8px 12px;
+   position: absolute;
+   margin-bottom: 15px;
+   bottom: 8px;
+   width: 100%;
+   text-align: center;
+   font-family: var(--paragraph-font);
+   /* border: 2px solid blue; */
+ 
+  }
+ 
+  .slide1text {
+   color: var(--primary-color);
+  }
+ 
+  .slide2text {
+   color: black;
+  }
+ 
+  /* Number text (1/3 etc) */
+  .numbertext {
+   color: var(--accent1-color);
+   font-size: 15px;
+   padding: 8px 12px;
+   position: absolute;
+   top: 0;
+   font-family: var(--paragraph-font);
+   font-weight: bold;
+  }
+ 
+  /*where the photos on the home screen came from:*/
+  .sourcetext {
+   text-align: center;
+   font-family: var(--paragraph-font);
+  }
+ 
+  .sourcetext a {
+   text-decoration: none;
+ 
+ 
+  }
+ 
+  /* The dots/bullets/indicators */
+  .dot {
+   cursor: pointer;
+   height: 15px;
+   width: 15px;
+   margin: 0 2px;
+   background-color: #bbb;
+   border-radius: 50%;
+   display: inline-block;
+   transition: background-color 0.6s ease;
+  }
+ 
+  .active,
+  .dot:hover {
+   background-color: #717171;
+  }
+ 
+  /* Fading animation */
+  .fade {
+   animation-name: fade;
+   animation-duration: 1.5s;
+  }
+ 
+  @keyframes fade {
+   from {
+    opacity: .4
+   }
+ 
+   to {
+    opacity: 1
+   }
+  }
+
+ /*MAIN GRID AREA - HOME PAGE*/
+ .main-grid-home{
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 12.5% 1fr 1fr 12.5%;
+ }
+ .welcome-box {
+  grid-column: 2/3;
+  padding: 40px;
+  background-color: var(--accent2-color); 
+  border: 10px solid var(--secondary-color);
+ }
+ .welcome-box h3, .choose-major-box h3{
+  font-family: var(--heading-font);
+  color: var(--secondary-color);
+  font-size: 2em;
+ }
+ .welcome-box p{
+  font-family: var(--paragraph-font);
+  font-size: 1.3em;
+ }
+ .choose-major-box{
+  grid-column: 3/4;
+  padding: 40px;
+  text-align: center;
+  background-color: var(--accent2-color);
+  border: 10px solid var(--secondary-color);
+ }
+ .welcome-title{
+  text-align: center;
+ }
+  /*a list of the majors on the homescreen, instead of the dropdown which was coded below*/
+  .major-list {
+   list-style-type: none;
+   line-height: 210%;
+   font-size: 1.2em;
+   font-family: var(--paragraph-font);
+  } 
+  .major-list a {
+   text-decoration: none;
+   padding: 5px;
+   color: var(--secondary-color);
+   font-weight: bold;
+  }
+  .major-list a:hover{
+   background-color: var(--secondary-color);
+   color: var(--accent1-color);
+  }
+.contact-button-box{
+ text-align: center;
+ margin-top: 80px;
+ font-family: var(--paragraph-font);
+ color: var(--secondary-color);
+}
+
+.contact-button-box h3{
+ font-size: 2.2em;
+}
+.contact-button-box h4{
+ font-size: 1.5em;
+}
+.contact-button-box button{
+ font-size: 1.5em;
+ background-color: var(--accent1-color);
+ color: var(--secondary-color);
+ padding: 7px;
+ border-radius: 12px;
+
+}
+.contact-button-box a{
+ text-decoration: none;
+}
+.contact-button-box button:hover{
+ background-color: var(--secondary-color);
+}
+.contact-button-box a:hover{
+ color: var(--primary-color);
+}
+
+
+
+/*FOOTER*/
 footer {
  background-color: var(--secondary-color);
  padding: 25px 50px;
- margin-top: 200px;
+ margin-top: 100px;
  display: flex;
  justify-content: space-around;
  align-items: center;
@@ -96,7 +331,7 @@ footer a:hover {
 
 
 /*CSS for the DROPDOWN on the Home page*/
-.dropbtn {
+/* .dropbtn {
  background-color: #3498DB;
  color: white;
  padding: 16px;
@@ -138,103 +373,34 @@ footer a:hover {
 
 .show {
  display: block;
-}
+} */
 
-/*SLIDE SHOW CSS, Style the next and previous buttons,
-the caption text and the dots:*/
-/* Slideshow container*/
-* {
- box-sizing: border-box
-}
-.slideshow-container {
- max-width: 1000px;
- position: relative;
- margin: auto;
-}
+/*the following is for mobile devices and smaller screen (in other words responsive design):*/
 
-/* Hide the images by default */
-.mySlides {
- display: none;
-}
-
-/* Next & previous buttons */
-.prev,
-.next {
- cursor: pointer;
- position: absolute;
- top: 50%;
- width: auto;
- margin-top: -22px;
- padding: 16px;
- color: white;
- font-weight: bold;
- font-size: 18px;
- transition: 0.6s ease;
- border-radius: 0 3px 3px 0;
- user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
- right: 0;
- border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
- background-color: rgba(0, 0, 0, 0.8);
-}
-
-/* Caption text */
-.text {
- color: #f2f2f2;
- font-size: 15px;
- padding: 8px 12px;
- position: absolute;
- bottom: 8px;
- width: 100%;
- text-align: center;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
- color: #f2f2f2;
- font-size: 12px;
- padding: 8px 12px;
- position: absolute;
- top: 0;
-}
-
-/* The dots/bullets/indicators */
-.dot {
- cursor: pointer;
- height: 15px;
- width: 15px;
- margin: 0 2px;
- background-color: #bbb;
- border-radius: 50%;
- display: inline-block;
- transition: background-color 0.6s ease;
-}
-
-.active,
-.dot:hover {
- background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
- animation-name: fade;
- animation-duration: 1.5s;
-}
-
-@keyframes fade {
- from {
-  opacity: .4
+@media screen and (max-width: 900px) {
+ nav, footer{
+  flex-direction: column;
+ }
+ .banner-box h1{
+  font-size: 1.5em;
+ }
+ .banner-box h5{
+  font-size: .8em;
+ }
+ .text-slideshow, .sourcetext, .numbertext{
+  font-size: .8em;
+ }
+ .main-grid-home{
+  display: block;
+  height: auto;
+ }
+ .welcome-box, .choose-major-box{
+  font-size: .8em;
+  
+ }
+ .contact-button-box{
+  font-size: .8em;
  }
 
- to {
-  opacity: 1
- }
+ 
 }
