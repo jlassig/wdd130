@@ -296,6 +296,121 @@ header{
  color: var(--primary-color);
 }
 
+/*APPLIED TECHNOLOGY CSS:*/
+/* *{
+  border: 2px solid blue;
+} */
+
+.appliedtech-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 50px;
+  row-gap: 50px;
+  margin-left: 12.5%;
+  margin-right: 12.5%
+  }
+.applied-tech-instructions {
+  grid-row: 1/2;
+  grid-column: 1/4;
+  font-size: 2em;
+  text-align: center;
+  font-family: var(--paragraph-font);
+
+}
+
+.tyler_jensen, .jenny_ortega{
+ grid-column: 1/2;
+}
+.susan_smith, .bill_johnson{
+  grid-column: 2/3;
+}
+.sean_jones, .tiffany_taylor{
+  grid-column: 3/4;
+}
+.tyler_jensen, .susan_smith, .sean_jones{
+  grid-row: 2/3;
+}
+.jenny_ortega, .bill_johnson, .tiffany_taylor{
+  grid-row: 3/4;
+}
+
+.advisor-img{
+  float: left;  /*this makes the text in the rest of the advisor class float around this image*/
+  padding: 10px 10px 0px 10px;
+  position: relative;
+
+}
+.pic-src{
+  position: absolute;
+  bottom: 1px;
+  left: 20px;
+  font-size: .8em; 
+  color: var(--accent1-color);
+  font-family: var(--paragraph-font);
+  
+}
+.pic-src a{
+  color:var(--accent1-color);
+  text-decoration: none;
+  font-family: var(--paragraph-font);
+}
+.pic-src a:hover{
+  color: var(--primary-color);
+}
+
+
+.advisor-info{
+  list-style-type: none;
+  font-family: var(--paragraph-font);
+  padding-right: 10px;
+
+}
+.li-span{
+  font-weight: bold;
+  text-decoration: underline;
+}
+.advisor{
+  border: 20px solid var(--accent1-color);
+  background-color: var(--accent2-color);
+  position: relative;
+  box-shadow: 5px 5px 10px #6f7364;
+}
+.advisor:hover{
+  border: 20px solid var(--secondary-color);
+}
+.advisor-info li{
+  padding-bottom: 6px;
+}
+
+.booknow-button{
+  width: 156px;
+  font-size: 1.5em;
+  background-color: var(--secondary-color);
+  padding: 7px;
+  border: 1px solid var(--accent1-color);
+  border-radius: 20px;
+  text-align: center;
+  margin: auto;
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translate(-50%);
+  /*https: //www.w3schools.com/howto/howto_css_image_text.asp*/
+}
+.booknow-button a{
+  text-decoration: none;
+  color: var(--accent1-color);
+  font-family: var(--heading-font);
+}
+.booknow-button:hover{
+  border: 1px solid var(--primary-color);
+
+}
+.booknow-button a:hover{
+  color: var(--primary-color);
+  
+}
+
 
 
 /*FOOTER*/
@@ -401,6 +516,13 @@ footer a:hover {
  }
  .contact-button-box{
   font-size: .8em;
+ }
+ .applied-tech-instructions{
+  font-size: 1em;  
+ }
+ .appliedtech-grid{
+  display:block;
+  height: auto;
  }
 
  
