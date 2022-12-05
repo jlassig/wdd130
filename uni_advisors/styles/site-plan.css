@@ -119,20 +119,22 @@ p {
 }
 
 p.colored {
- background-color: var(--paragraph-background-color);
- color: var(--paragraph-color-on-color);
+ background-color: var(--accent2-color);
+ color: var(--secondary-color);
 }
 
 nav {
- background-color: var(--nav-background-color);
+ background-color: var(--secondary-color);
  line-height: 3em;
  text-align: center;
  font-size: 1.2em;
+
 }
 
 nav {
  list-style-type: none;
  display: flex;
+
 
 }
 
@@ -142,29 +144,43 @@ nav a {
  text-decoration: none;
  padding: 10px;
 
+
 }
 
 nav a:link,
 nav a:visited {
- color: var(--nav-link-color);
+ color: var(--primary-color);
 }
 
 nav a:hover {
- color: var(--nav-hover-link-color);
- background-color: var(--nav-hover-background-color);
+ color: var(--secondary-color);
+ background-color: var(--accent1-color);
 }
+
 
 .sitemap {
  display: grid;
  justify-content: center;
 
- grid-template-columns: repeat(6, 15%);
+ grid-template-columns: repeat(10, 10%);
  grid-template-rows: 3em 1.5em 1.5em 3em;
- grid-template-areas: ". . home home . ."
-  ". . . top . ."
-  ". left left right right ."
-  "page2 page2 . . page3 page3";
+ grid-template-areas: ". . . home home home home . . ."
+  ". . . . . top . . . ."
+  ". left left middle-left center-left center-right middle-right right right ."
+  "page2 page2 . . page3 page3 .  . page4 page4 ";
 }
+
+/* .sitemap {
+  display: grid;
+  justify-content: center;
+
+  grid-template-columns: repeat(6, 15%);
+  grid-template-rows: 3em 1.5em 1.5em 3em;
+  grid-template-areas: ". . home home . ."
+    ". . . top . ."
+    ". left left right right ."
+    "page2 page2 . . page3 page3";
+} */
 
 .sitemap>div {
 
@@ -190,6 +206,12 @@ nav a:hover {
  line-height: 3em;
 }
 
+.sm-page4 {
+  grid-area: page4;
+  background-color: #ccc;
+  line-height: 3em;
+}
+
 .top {
  grid-area: top;
  border-left: 1px solid;
@@ -205,4 +227,21 @@ nav a:hover {
  grid-area: right;
  border-top: 1px solid;
  border-right: 1px solid;
+}
+.center-left{
+  grid-area: center-left;
+  border-top: 1px solid;
+  border-right: 1px solid;
+}
+.center-right{
+  grid-area: center-right;
+  border-top: 1px solid;
+}
+.middle-left{
+  grid-area: middle-left ;
+  border-top: 1px solid;
+}
+.middle-right{
+  grid-area: middle-right;
+  border-top: 1px solid;
 }
