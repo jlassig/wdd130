@@ -85,21 +85,28 @@ p {
  color: var(--paragraph-color);
  padding: 1em;
 }
+.open_sans{
+  font-family: var(--paragraph-font);
+  font-weight: normal;
+}
 
 .colors {
  width: 100%;
  min-width: 350px;
  margin: 30px auto;
  text-align: center;
+
 }
 
 .colors th {
  background-color: #999;
+ font-family: var(--heading-font)
 }
 
 .colors td {
  width: 25%;
  height: 3em;
+ font-family: var(--paragraph-font)
 }
 
 .primary {
@@ -108,6 +115,7 @@ p {
 
 .secondary {
  background-color: var(--secondary-color);
+ color: white;
 }
 
 .accent1 {
@@ -128,6 +136,7 @@ nav {
  line-height: 3em;
  text-align: center;
  font-size: 1.2em;
+ font-family: var(--paragraph-font)
 
 }
 
@@ -157,6 +166,7 @@ nav a:hover {
 
 
 .sitemap {
+
  display: grid;
  justify-content: center;
 
@@ -181,7 +191,7 @@ nav a:hover {
 } */
 
 .sitemap>div {
-
+ font-family: var(--paragraph-font);
  text-align: center;
 
 }
