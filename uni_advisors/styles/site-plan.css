@@ -85,7 +85,7 @@ p {
  color: var(--paragraph-color);
  padding: 1em;
 }
-.tahoma{
+.tahoma_font{
   font-family: var(--paragraph-font);
   font-weight: normal;
 }
